@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             txtIP = new TextBox();
-            textBox2 = new TextBox();
+            txtPort = new TextBox();
             rtbMessage = new RichTextBox();
             btnSend = new Button();
             label1 = new Label();
-            txtPort = new Label();
+            label2 = new Label();
             label3 = new Label();
             SuspendLayout();
             // 
@@ -44,12 +44,12 @@
             txtIP.Size = new Size(125, 27);
             txtIP.TabIndex = 0;
             // 
-            // textBox2
+            // txtPort
             // 
-            textBox2.Location = new Point(586, 47);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(125, 27);
-            textBox2.TabIndex = 1;
+            txtPort.Location = new Point(586, 47);
+            txtPort.Name = "txtPort";
+            txtPort.Size = new Size(125, 27);
+            txtPort.TabIndex = 1;
             // 
             // rtbMessage
             // 
@@ -78,14 +78,14 @@
             label1.TabIndex = 4;
             label1.Text = "IP Remote Host";
             // 
-            // txtPort
+            // label2
             // 
-            txtPort.AutoSize = true;
-            txtPort.Location = new Point(586, 24);
-            txtPort.Name = "txtPort";
-            txtPort.Size = new Size(35, 20);
-            txtPort.TabIndex = 5;
-            txtPort.Text = "Port";
+            label2.AutoSize = true;
+            label2.Location = new Point(586, 24);
+            label2.Name = "label2";
+            label2.Size = new Size(35, 20);
+            label2.TabIndex = 5;
+            label2.Text = "Port";
             // 
             // label3
             // 
@@ -102,11 +102,11 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
             Controls.Add(label3);
-            Controls.Add(txtPort);
+            Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(btnSend);
             Controls.Add(rtbMessage);
-            Controls.Add(textBox2);
+            Controls.Add(txtPort);
             Controls.Add(txtIP);
             Name = "UDPClient";
             Text = "UDPClient";
@@ -117,11 +117,11 @@
         #endregion
 
         private TextBox txtIP;
-        private TextBox textBox2;
+        private TextBox txtPort;
         private RichTextBox rtbMessage;
         private Button btnSend;
         private Label label1;
-        private Label txtPort;
+        private Label label2;
         private Label label3;
     }
 }
