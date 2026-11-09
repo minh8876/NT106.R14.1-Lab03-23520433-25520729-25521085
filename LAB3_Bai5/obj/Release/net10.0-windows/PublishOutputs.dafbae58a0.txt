@@ -1,0 +1,10 @@
+C:\Users\V\OneDrive\Tài liệu\LAB3_Bai5.exe
+C:\Users\V\OneDrive\Tài liệu\LAB3_Bai5.dll
+C:\Users\V\OneDrive\Tài liệu\LAB3_Bai5.deps.json
+C:\Users\V\OneDrive\Tài liệu\LAB3_Bai5.runtimeconfig.json
+C:\Users\V\OneDrive\Tài liệu\LAB3_Bai5.pdb
+C:\Users\V\OneDrive\Tài liệu\System.Data.SQLite.dll
+C:\Users\V\OneDrive\Tài liệu\runtimes\linux-x64\native\SQLite.Interop.dll
+C:\Users\V\OneDrive\Tài liệu\runtimes\osx-x64\native\SQLite.Interop.dll
+C:\Users\V\OneDrive\Tài liệu\runtimes\win-x64\native\SQLite.Interop.dll
+C:\Users\V\OneDrive\Tài liệu\runtimes\win-x86\native\SQLite.Interop.dll
