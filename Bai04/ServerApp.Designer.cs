@@ -42,6 +42,7 @@
             btnExport.TabIndex = 0;
             btnExport.Text = "Export";
             btnExport.UseVisualStyleBackColor = true;
+            btnExport.Click += btnExport_Click;
             // 
             // btnListen
             // 
@@ -51,6 +52,7 @@
             btnListen.TabIndex = 1;
             btnListen.Text = "Listen";
             btnListen.UseVisualStyleBackColor = true;
+            btnListen.Click += btnListen_Click;
             // 
             // progressBar1
             // 
@@ -79,6 +81,7 @@
             Controls.Add(btnExport);
             Name = "ServerApp";
             Text = "ServerApp";
+            FormClosing += ServerApp_FormClosing;
             ResumeLayout(false);
         }
 

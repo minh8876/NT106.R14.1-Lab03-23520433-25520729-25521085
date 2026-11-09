@@ -53,6 +53,7 @@
             cboMovie.Name = "cboMovie";
             cboMovie.Size = new Size(151, 28);
             cboMovie.TabIndex = 1;
+            cboMovie.SelectedIndexChanged += cboMovie_SelectedIndexChanged;
             // 
             // cboRoom
             // 
@@ -61,6 +62,7 @@
             cboRoom.Name = "cboRoom";
             cboRoom.Size = new Size(151, 28);
             cboRoom.TabIndex = 2;
+            cboRoom.SelectedIndexChanged += cboRoom_SelectedIndexChanged;
             // 
             // clbSeats
             // 
@@ -71,6 +73,7 @@
             clbSeats.Name = "clbSeats";
             clbSeats.Size = new Size(150, 114);
             clbSeats.TabIndex = 3;
+            clbSeats.ItemCheck += clbSeats_ItemCheck;
             // 
             // btnBook
             // 
@@ -80,6 +83,7 @@
             btnBook.TabIndex = 4;
             btnBook.Text = "Đặt vé";
             btnBook.UseVisualStyleBackColor = true;
+            btnBook.Click += btnBook_Click;
             // 
             // label1
             // 

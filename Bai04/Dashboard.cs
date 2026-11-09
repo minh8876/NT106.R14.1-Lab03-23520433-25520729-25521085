@@ -20,10 +20,17 @@ namespace Bai04
 
         private void btnClient_Click(object sender, EventArgs e)
         {
-            clientCount++;
             ClientApp clientForm = new ClientApp();
-            clientForm.Text = $"Quầy bán vé số {clientCount}";
+
+            if (!clientForm.IsConnected)
+            {
+                clientForm.Dispose();
+                return;
+            }
+
+            clientCount++;
             clientForm.Show();
+            clientForm.Text = $"Quầy bán vé số {clientCount}";
         }
 
         private void btnServer_Click(object sender, EventArgs e)
@@ -31,6 +38,16 @@ namespace Bai04
             if (serverForm == null || serverForm.IsDisposed)
             {
                 serverForm = new ServerApp();
+
+                if (!serverForm.IsReady)
+                {
+                    serverForm.Dispose();
+                    serverForm = null;
+                    return;
+                }
+
+                serverForm.FormClosed += (s, args) => btnServer.Enabled = true;
+
                 serverForm.Show();
                 btnServer.Enabled = false;
             }
