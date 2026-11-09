@@ -54,8 +54,13 @@ namespace Bai02
                 do
                 {
                     bytesReceived = clientSocket.Receive(recv);
+
+                    if (bytesReceived == 0) break;
+
                     text += Encoding.ASCII.GetString(recv);
                 } while (text[text.Length - 1] != '\n');
+
+                if (bytesReceived == 0) break;
 
                 listViewCommand.Items.Add(new ListViewItem(text.Trim()));
             }
